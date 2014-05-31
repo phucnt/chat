@@ -43,7 +43,44 @@ module.exports = function(grunt){
         },
       }
     },
+    'sass':{
+      devsass:{
+        options:{
+          style:'expanded'
+        },
+        files:{
+          'css/main.css':'css/sass/header.sass'
+        }
+
+      }
+    },
+    'less':{
+      devless:{
+        options:{
+          paths:["css"],
+          dumpLineNumbers:'comments'
+        },
+        files:{
+          "css/main.css":"css/less/style.less"
+        }
+      }
+    },
+    //watch
+    watch:{
+      less:{
+        files:['css/less/*.less'],
+        tasks:['less'],
+        options:{
+          reload:true,
+        },
+      },
+    },
   });
   grunt.loadNpmTasks('grunt-sails-linker');
-  grunt.registerTask('default',['sails-linker']);
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  
+  grunt.registerTask('default',['sails-linker','watch:less']);
+
 }
