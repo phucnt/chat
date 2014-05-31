@@ -1,0 +1,53 @@
+/* line 2, D:\node\chat\chat\css\less\style.less */
+body {
+  font-family: arial sans-serif;
+  background: #222222;
+}
+/* line 6, D:\node\chat\chat\css\less\style.less */
+.container {
+  width: 1000px;
+  margin: 0 auto ;
+}
+/* line 9, D:\node\chat\chat\css\less\style.less */
+.container .logo {
+  font-size: 50px;
+  margin: 0px;
+  text-align: center;
+}
+/* line 13, D:\node\chat\chat\css\less\style.less */
+.container .logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 21, D:\node\chat\chat\css\less\style.less */
+.chat-input {
+  padding: 10px;
+}
+/* line 23, D:\node\chat\chat\css\less\style.less */
+.chat-input input {
+  width: 90%;
+}
+/* line 27, D:\node\chat\chat\css\less\style.less */
+.col-left {
+  width: 79%;
+  float: left;
+  background: #009999;
+}
+/* line 31, D:\node\chat\chat\css\less\style.less */
+.col-left .chat-area {
+  width: 99%;
+  overflow: scroll;
+}
+/* line 37, D:\node\chat\chat\css\less\style.less */
+.col-right {
+  float: right;
+  background: #fff;
+  border-left: 1px solid cyan;
+  height: 240px;
+  width: 20%;
+  overflow: scroll;
+}
+/* line 45, D:\node\chat\chat\css\less\style.less */
+.clearfix {
+  clear: both;
+}

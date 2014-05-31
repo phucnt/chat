@@ -1,1 +1,47 @@
-
+@background-left:#009999;
+body{
+  font-family:arial sans-serif;
+  background:#222222;
+}
+.container{
+  width:1000px;
+  margin:0 auto ;
+ .logo{
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    a{
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+  }
+  
+  
+}
+.chat-input{
+  padding: 10px;
+  input{
+    width:90%;
+  }
+}
+.col-left{
+    width:79%;
+    float:left;
+    background:@background-left;
+    .chat-area{
+      width:99%;
+      overflow: scroll;
+    }
+   
+}
+.col-right{
+  float:right;
+  background:#fff;
+  border-left: 1px solid cyan;
+  height: 240px;
+  width: 20%;
+  overflow: scroll;
+}
+.clearfix{
+  clear:both;
+}
