@@ -23,6 +23,9 @@ body{
   input{
     width:90%;
   }
+  #chat-button{
+    width:69px;
+  }
 }
 .col-left{
     width:79%;
@@ -31,6 +34,8 @@ body{
     .chat-area{
       width:99%;
       overflow: scroll;
+      height: 200px;
+      background: #fff;
     }
    
 }
@@ -41,7 +46,16 @@ body{
   height: 240px;
   width: 20%;
   overflow: scroll;
+  ul.list-chat{
+    padding: 0px 5px;
+    li{
+      list-style: none;
+      cursor:pointer;
+      &:hover{background:violet;};
+    }
+  }
 }
 .clearfix{
   clear:both;
 }
+

@@ -8,7 +8,7 @@
 //
 var jsfile = [
   'js/vendor/jquery-1.11.0.min.js',
-  'js/vendor/*.js',
+  'js/**/*.js',
   'js/main.js',
 ];
 var cssfile = [

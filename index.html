@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <!--STYLE END-->
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -28,23 +28,26 @@
                <a href="#">logo</a>
            </h1>
            <div class="col-left">
-               <textarea name="" id="" class ="chat-area" cols="30" rows="10"></textarea>
+               <div id="output" class ="chat-area">
+                   
+               </div>
                <div class="chat-input">
-                   <input type="text" id="chat-input">
-                   <button>Send</button>
+                       <input type="text" id="chat-input">
+                       <input id="chat-button" type="submit" value="SEND">
                </div>
            </div>
            <div class="col-right">
-               
+              
            </div>
            <dic class="clearfix"></dic>
                 
         </div><!--End Container-->
         <!--SCRIPTS-->
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/client.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/vendor/jquery-ui-1.10.4.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/main.js"></script>
         <!--SCRIPTS END-->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
